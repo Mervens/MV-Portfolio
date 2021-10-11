@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./assets/index.css">
+    <title>MV - Basic Portfolio</title>
+</head>
+
+<body>
+    <audio autoplay loop>
+        <source src="./assets/music/Cinematic-Ambient.mp3" type="audio/mpeg">
+    </audio>
+    
+    <header>
+        <span class="span-background title"> <!-- Class for title background -->
+            <h1>Mervens Victor</h1>
+        </span>
+        <nav>
+            <ul class="nav-effects"> <!-- Header nav bar -->
+                <li>
+                    <!-- Anchor elements -->
+                    <a href="#about-me">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact Me</a>
+                </li>
+                <li> <!-- This anchor href type action is to download my resume -->
+                    <a href="./assets/MV-Resume.docx" download>Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Here Section -->
+    <!-- Hero section will have the image as background -->
+    <section class="hero">
+        <!-- Flex Container-->
+        <div class="hero-subtitle">           
+                <!-- Span used to provide a span background as well as change the opacity of both the span and the text -->
+                <span class="span-background opacity">Enjoy the view.</span>
+        </div>
+    </section>
+
+    <!-- About Me article grid-->
+    <article> 
+        <div id="about-me" class="about-me-wrapper"> <!-- Id's coming from the header nav and a flex wrapper -->
+            <div class="about-me-grid-container"> <!-- About me containter is a grid container -->
+                <div class="about-me-item about-me-title"> <!-- Each item is a grid item -->
+                    <p> About </p>
+                </div>
+                <div class="about-me-item p1">
+                    <p>Working towards something that changes the world is what I believe my impact to be. I work hard to make sure my productions are of good quality, and they are both satisfying to the eye and in functionality.</p>
+                </div>
+                <div class="about-me-item p2">
+                    <p>Aspiring game developer and web developer.</p>
+                </div>  
+            </div>
+        </div> 
+    </article>
+
+    <!-- Work Projects article grid-->
+    <article>
+        <div id="projects" class="projects-wrapper"> <!-- Id's coming from the header nav and a flex wrapper -->
+            <div class="projects-grid-container"> <!-- Work projects container is a grid container -->
+                <div class="projects-item projects-title"> <!-- Each item is a grid item -->
+                    <p> Projects </p>
+                </div>
+                <!-- Clickable grid link functionality achieved with a javascript function as anchor wrap did not work (tried) as intended for me -->
+                <!-- Alt, title (tooltip) and open in new tab functionality added-->
+                <!-- Each grid item has its own grid location achieved by creating one object/instance per class -->
+                <div onclick="linkClick('horiseon')" alt="Image Displaying the Horiseon landing Page" title="Horiseon landing Page" target="_blank" style="cursor: pointer;" class="projects-item-project horiseon">
+                    <span class="span-background"> <!-- Span added to contain h3, lower text and wrapped background -->
+                        <h3>MV - Horiseon Services</h3>
+                        <span class="lower-text">HTML/CSS</span> <!-- A small class to apply for all grid lower text -->
+                    </span>
+                </div>
+                <!-- All grids below follow same patern as described above until this article container is finished -->
+                <div onclick="linkClick('run-buddy')" alt="Image Displaying the RUN BUDDY landing Page" title="RUN BUDDY landing page" style="cursor: pointer;" class="projects-item-project run-buddy">
+                    <span class="span-background">
+                        <h3>MV - Run Buddy</h3>
+                        <span class="lower-text">HTML/CSS</span>
+                    </span>
+                </div>
+                <div onclick="linkClick('password-generator')" alt="Image Displaying the Password Generator landing Page" title="Password Generator landing page" style="cursor: pointer;" class="projects-item-project password-generator">
+                    <span class="span-background">
+                        <h3>MV - Password Generator</h3>
+                        <span class="lower-text">CSS/Javascript</span>
+                    </span>
+                </div>
+                <div onclick="linkClick('web-api-code-quiz')" alt="Image Displaying the Web Api Code Quiz landing Page" title="Web Api Code Quiz landing page" style="cursor: pointer;" class="projects-item-project web-api-code-quiz">
+                    <span class="span-background">
+                        <h3>MV - Code Quiz</h3>
+                        <span class="lower-text">Javascript/CSS/LocalStorage</span>
+                    </span>
+                </div>
+                <div onclick="linkClick('work-day-scheduler')" alt="Image Displaying the Web Api Code Quiz landing Page" title="Web Api Code Quiz landing page" style="cursor: pointer;" class="projects-item-project work-day-scheduler">
+                    <span class="span-background">
+                        <h3>MV - Work Day Scheduler</h3>
+                        <span class="lower-text">Dynamic Javascript/Bootstrap</span>
+                    </span>
+                </div>
+                <div onclick="linkClick('flightaway')" alt="Image Displaying the Project01 Group07 landing Page" title="Project01 Group07 landing page" style="cursor: pointer;" class="projects-item-project flightaway">
+                    <span class="span-background">
+                        <h3>Project 1: Flight Away</h3>
+                        <span class="lower-text">HTML/CSS/Javascript</span>
+                    </span>
+                </div>
+
+                <div class="projects-item-project ghost-item">
+                    <span class="span-background">
+                        <h3>Coming soon!</h3>
+                        <span class="lower-text">TBD</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer content Grid-->
+    <footer>
+        <p>
+        © Mervens Victor | Creation for UCF's Coding Bootcamp</br>
+        </p>
+        <div class="reference">
+        Music by: Cinematic Ambient Feeling by LesFM | https://lesfm.net/</br>
+        Music promoted by https://www.chosic.com/free-music/all/</br>
+        Creative Commons CC BY 3.0</br>
+        https://creativecommons.org/licenses/by/3.0/</p>
+    </div>
+        <div id="contact-me" class="footer-wrapper">
+            <div class="footer-container">
+                <div class="footer-grid-item contact-me"> 
+                    Contact Me
+                </div>
+                <div class="footer-grid-item phone">
+                    <a href="tel:407-558-6938" class="nav-effects">Mobile: 407-558-6938</a>
+                </div>
+                <div class="footer-grid-item email"> 
+                    <a href="mailto:mervens.victor77@gmail.com">Email: mervens.victor77@gmail.com</a>
+                </div>
+                <div class="footer-grid-item git-hub"> 
+                    <a href="https://github.com/Mervens/" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/index.js">
+    </script>
+
+</body>
+</html>

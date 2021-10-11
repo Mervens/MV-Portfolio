@@ -1,0 +1,22 @@
+{
+  "name": "mv-portfolio",
+  "version": "1.0.0",
+  "description": "My basic portfolio page",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mervens/MV-Portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Mervens Victor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mervens/MV-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Mervens/MV-Portfolio#readme"
+}
