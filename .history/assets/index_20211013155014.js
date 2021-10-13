@@ -25,7 +25,7 @@ function linkClick(input) {
     } else if (input == 'employee-tracker') {
         window.open("https://github.com/Mervens/Employee-Tracker");
     } else if (input == 'e-commerce') {
-        window.open("https://github.com/Mervens/E-Commerce");
+        window.open("https://jaymaverick.github.io/Project1/");
     } else if (input == 'tech-blog') {
         window.open("https://mvtech.herokuapp.com/");
     } else if (input == 'easyeats') {
